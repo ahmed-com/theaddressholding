@@ -43,6 +43,8 @@ async function bootstrap() {
     process.exit(0); // Exit after the command runs.
   }
 
+  app.enableCors();
+
   await app.listen(8080);
 }
 bootstrap();
